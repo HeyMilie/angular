@@ -6,3 +6,6 @@
 - Présentation d'Angular
 - Rappels HTML, CSS et js
 - Installation accompagnée
+
+## Jour 2
+- Premiers pas Angular
