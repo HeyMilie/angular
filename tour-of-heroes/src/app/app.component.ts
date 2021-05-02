@@ -1,6 +1,8 @@
+import { splitClasses } from '@angular/compiler';
 import { Component } from '@angular/core';
 
-let heroCount =2;
+
+let heroCount = 2;
 
 @Component({
   selector: 'app-root',
@@ -22,4 +24,12 @@ export class AppComponent {
     this.heros.push(this.heroToAdd);
     this.title = 'La tour des ' + this.heros.length + ' héros';
   }
+
+  heroToRemove = '';
+  removeHero(){
+
+    }
+  
+
+
 }

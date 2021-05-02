@@ -13,4 +13,6 @@
 </ul>
 
 <label for="InputHeroName">Héros à ajouter : <input type="text" name="nameOfTheHero" id ="InputHeroName" [(ngModel)]="heroToAdd"></label>
-<button (click)="addHero()">Ajouter un héros</button>
+<button (click)="addHero()">Ajouter un héros</button><br>
+<label for="InputHeroName">Héros à supprimer : <input type="text" name="nameOfTheHero" id ="InputHeroName" [(ngModel)]="heroToRemove"></label>
+<button (click)="removeHero()">Supprimer un héros</button>
