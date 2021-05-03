@@ -1,6 +1,7 @@
-<h1 [ngStyle]="titleStyle">Bienvenue dans la tour des {{heros.length}} héros, {{username}} </h1>
+<h1>Bienvenue dans la tour des héros</h1>
 
-
+<!--  Second course examples -->
+<!-- 
 <p>
   <label for="InputUsername">Votre nom
   <input id="InputUsername" type="text" name="name" [(ngModel)]="username"></label>
@@ -8,9 +9,11 @@
 
 <p>Vos héros :</p>
 <ul>
-  <li *ngFor="let hero of heros">{{hero}} <small *ngIf="hero == username">(c'est moi :))</small></li>
-  <!-- <li *ngFor="let hero of heros">{{hero}}</li> -->
-</ul>
+  <li *ngFor="let hero of heroes">{{heroes}} <small *ngIf="hero == username">(c'est moi :))</small></li>
+  <li *ngFor="let hero of heroes">{{heroes}}</li>
+</ul> 
 
 <label for="InputHeroName">Héros à ajouter : <input type="text" name="nameOfTheHero" id ="InputHeroName" [(ngModel)]="heroToAdd"></label>
-<button (click)="addHero()">Ajouter un héros</button>
+<button (click)="addHero()">Ajouter un héros</button> -->
+
+<app-heroes-list></app-heroes-list>
