@@ -12,19 +12,14 @@ let heroCount = 2;
 export class AppComponent {
   title = 'La tour des héros';
   titleStyle = {'font-family' : 'Arial', 'color' : 'red'};
-  username = "Anonymous";
-  heros = [
-    "Batman",
-    "Catwoman",
-    "Wonder Woman",
-    "Iron Man"
-  ];
+  //username = "Anonymous";
+
   heroToAdd = '';
   heroToRemove = '';
 
   addHero(){
-    this.heros.push(this.heroToAdd);
-    this.title = 'La tour des ' + this.heros.length + ' héros';
+    // this.heroes.push(this.heroToAdd);
+    // this.title = 'La tour des ' + this.heroes.length + ' héros';
   }
 
   removeHero(heroToRemove: string) {
