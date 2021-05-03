@@ -14,7 +14,13 @@ export class HeroesListComponent implements OnInit {
     { id : 3, name : 'Spiderman' }
   ];
 
+  selectedHero: Hero;
+
   constructor() { }
+
+  selectHero (hero:Hero){
+    this.selectedHero = hero;
+  }
 
   ngOnInit(): void {
   }
