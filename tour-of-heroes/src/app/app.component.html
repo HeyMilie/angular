@@ -14,5 +14,9 @@
 
 <label for="InputHeroName">Héros à ajouter : <input type="text" name="nameOfTheHero" id ="InputHeroName" [(ngModel)]="heroToAdd"></label>
 <button (click)="addHero()">Ajouter un héros</button><br>
-<label for="InputHeroName">Héros à supprimer : <input type="text" name="nameOfTheHero" id ="InputHeroName" [(ngModel)]="heroToRemove"></label>
-<button (click)="removeHero()">Supprimer un héros</button>
+
+
+<p>
+  <label for="InputHeroNameToRemove">Héros à retirer : <input id="InputHeroNameToRemove" type="text" name="nameOfTheHero" [(ngModel)]="heroToRemove"></label><button (click)='removeHero(heroToRemove)'>Retirer héros</button>
+</p>
+  

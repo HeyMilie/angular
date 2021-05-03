@@ -20,16 +20,24 @@ export class AppComponent {
     "Iron Man"
   ];
   heroToAdd = '';
+  heroToRemove = '';
+
   addHero(){
     this.heros.push(this.heroToAdd);
     this.title = 'La tour des ' + this.heros.length + ' héros';
   }
 
-  heroToRemove = '';
-  removeHero(){
-
-    }
-  
-
+  removeHero(heroToRemove: string) {
+    this.heros.forEach((value, index) => {
+      if (value == heroToRemove) this.heros.splice(index, 1);
+    });
+  }
+  manageHero(heroToManage: string) {
+    this.heros.forEach((value, index) => {
+      if (value == heroToManage) this.heros.splice(index, 1);
+      else this.heros.push(heroToManage)
+    });
+  }
 
 }
+
