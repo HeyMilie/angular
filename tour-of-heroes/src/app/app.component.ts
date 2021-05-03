@@ -22,17 +22,17 @@ export class AppComponent {
     // this.title = 'La tour des ' + this.heroes.length + ' héros';
   }
 
-  removeHero(heroToRemove: string) {
-    this.heros.forEach((value, index) => {
-      if (value == heroToRemove) this.heros.splice(index, 1);
-    });
-  }
-  manageHero(heroToManage: string) {
-    this.heros.forEach((value, index) => {
-      if (value == heroToManage) this.heros.splice(index, 1);
-      else this.heros.push(heroToManage)
-    });
-  }
+  // removeHero(heroToRemove: string) {
+  //   this.heros.forEach((value, index) => {
+  //     if (value == heroToRemove) this.heros.splice(index, 1);
+  //   });
+  // }
+  // manageHero(heroToManage: string) {
+  //   this.heros.forEach((value, index) => {
+  //     if (value == heroToManage) this.heros.splice(index, 1);
+  //     else this.heros.push(heroToManage)
+  //   });
+  // }
 
 }
 
