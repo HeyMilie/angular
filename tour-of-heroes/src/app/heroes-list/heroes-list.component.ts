@@ -8,17 +8,17 @@ import Hero from '../types/hero.type';
 })
 export class HeroesListComponent implements OnInit {
 
-  heroes = [
+  heroes: Hero[] = [
     { id : 1, name : 'Batman' },
     { id : 2, name : 'Superman' },
     { id : 3, name : 'Spiderman' }
   ];
 
-  selectedHero: Hero;
+  selectedHero: Hero | undefined;
 
   constructor() { }
 
-  selectHero (hero:Hero){
+  selectHero(hero: Hero){
     this.selectedHero = hero;
   }
 

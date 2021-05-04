@@ -17,10 +17,10 @@ export class AppComponent {
   heroToAdd = '';
   heroToRemove = '';
 
-  addHero(){
+  //addHero(){
     // this.heroes.push(this.heroToAdd);
     // this.title = 'La tour des ' + this.heroes.length + ' héros';
-  }
+  //}
 
   // removeHero(heroToRemove: string) {
   //   this.heros.forEach((value, index) => {
