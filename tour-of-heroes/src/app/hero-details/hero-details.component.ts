@@ -8,7 +8,8 @@ import Hero from '../types/hero.type';
 })
 export class HeroDetailsComponent implements OnInit {
 
-  @Input() hero: Hero | undefined;
+  @Input()
+  hero!: Hero;
 
   constructor() { }
 
