@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import Hero from '../types/hero.type';
 
 @Component({
@@ -7,6 +7,8 @@ import Hero from '../types/hero.type';
   styleUrls: ['./hero-details.component.css']
 })
 export class HeroDetailsComponent implements OnInit {
+
+  @Input() hero: Hero | undefined;
 
   constructor() { }
 
